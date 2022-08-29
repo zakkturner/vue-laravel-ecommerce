@@ -30,7 +30,7 @@ export default {
                 product_id: this.productId,
             });
 
-            console.log(response);
+            this.$root.$emit("changeInCart", response.data.items);
         },
     },
     mounted() {
